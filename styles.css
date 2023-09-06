@@ -82,19 +82,33 @@ header {
             padding: 16px;
             font-size: 20px;
             border: 1px solid var(--black-color);
+            box-shadow: 0 9px 14px 0 rgba(0, 0, 0, 0.1);
             &:hover {
                 border-color: var(--blue-color);
-    
+                & svg {
+                    fill: var(--blue-color);
+
+                }
             }
         }
-        & p {
+        & svg {
             position: relative;
-            top: 20px;
-            right: 250px;
+            right: 40px;
+            width: 28px;
+            &:hover {
+                fill: var(--blue-color);
+    
+            }
         }
         
 
     }
 
     
+}
+
+.grid-container {
+    width: 80%;
+    background-color: red;
+    margin: 0 auto;
 }
