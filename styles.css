@@ -6,7 +6,8 @@
 :root {
     --black-color: #000000;
     --white-color: #fff;
-    --blue-color: #4C5FD5
+    --blue-color: #4C5FD5;
+    --light-color: #dadbf1;
 }
 
 header {
@@ -56,4 +57,29 @@ header {
             color: var(--black-color);
         }
     }
+}
+
+.input-container {
+    padding-top: 80px;
+    padding-bottom: 115px;
+    background-color: var(--light-color);
+
+    & h1 {
+        text-align: center;
+        font-size: 80px;
+        font-weight: 400;
+    }
+
+    & .container2 {
+        display: flex;
+        justify-content: center;
+
+        & input {
+            width: 720px;
+            height: 66px;
+            padding: 16px;
+        }
+    }
+
+    
 }
