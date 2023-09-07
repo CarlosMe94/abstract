@@ -111,3 +111,12 @@ header {
 
     
 }
+
+.grid-container {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
