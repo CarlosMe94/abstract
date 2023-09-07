@@ -10,6 +10,10 @@
     --light-color: #dadbf1;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 header {
     height: 88px;
     background-color: var(--black-color);
@@ -83,6 +87,7 @@ header {
             font-size: 20px;
             border: 1px solid var(--black-color);
             box-shadow: 0 9px 14px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 7px;
             &:hover {
                 border-color: var(--blue-color);
                 & svg {
@@ -105,10 +110,4 @@ header {
     }
 
     
-}
-
-.grid-container {
-    width: 80%;
-    background-color: red;
-    margin: 0 auto;
 }
