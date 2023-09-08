@@ -113,10 +113,54 @@ header {
 }
 
 .grid-container {
-    width: 75%;
-    margin: 0 auto;
-    margin-top: 75px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(3,1fr);
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 75px;
+    column-gap: 15px;
+
+    .item {
+        display: flex;
+        gap: 35px;
+        margin-bottom: 3rem;
+
+        .item-img {
+            display: flex;
+            flex-direction: column;
+            & img {
+                width: 85px;
+            }
+        }
+
+        .item-text {
+            padding: 0 1.5rem 0 0;
+            & h4 {
+                font-size: 24px;
+                line-height: 28px;
+                font-weight: 700;
+            }
+
+            & p {
+                font-size: 24px;
+                line-height: 32px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+            & a {
+                font-size: 20px;
+                line-height: 28px;
+                text-decoration: none;
+                color: var(--blue-color);
+                font-weight: 400;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        
+    }
+    
 }
